@@ -15,3 +15,6 @@ class QuestionCreateView(CreateView):
 
 class Success(TemplateView):
   template_name = "success.html"
+
+class Bio(TemplateView):
+    template_name = "about_me.html"
