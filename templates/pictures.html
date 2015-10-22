@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+{% load staticfiles %}
+<div class="jumbotron">
+    <div class="gallery" align="center">
+      <h3>Simple HTML Photo Gallery with JavaScript</h3>
+    <div class="thumbnails">
+      <img onmouseover="preview.src=img1.src" name="img1" src="{% static "img/img2.jpg" %}" alt="" />
+      <img onmouseover="preview.src=img2.src" name="img2" src="{% static "img/img2.jpg" %}" alt="" />
+      <img onmouseover="preview.src=img3.src" name="img3" src="{% static "img/img3.jpg" %}" alt="" />
+      <img onmouseover="preview.src=img4.src" name="img4" src="{% static "img/img2.jpg" %}" alt="" />
+    </div>
+    <div class="preview" align="center">
+	    <img name="preview" src="{% static "img/img2.jpg" %}" alt=""/>
+    </div>
+  </div>
+
+</div>
+{% endblock %}

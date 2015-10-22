@@ -6,4 +6,5 @@ urlpatterns = patterns('',
     url(r'^question/create/$', QuestionCreateView.as_view(), name='question_create'),
     url(r'^success/$', Success.as_view(), name='success'),
     url(r'^bio/$', Bio.as_view(), name='bio'),
+    url(r'^pictures/$', Pictures.as_view(), name='pictures'),
 )

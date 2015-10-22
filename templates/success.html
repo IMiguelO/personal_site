@@ -1,6 +1,12 @@
 {% extends "base.html" %}
 {% block content %}
 <div class="alert alert-success">
-    <p>It seems like you want to contact me, I will get back to you as soon as possible. I'm on my phone more times that I eat.</p>
+    <p>It seems like you want to contact me, I will get back to you as soon as possible. I'm on my phone more times that I eat.</p><p id="datetime"></p>
+
+<script>
+var d = new Date();
+document.getElementById("datetime").innerHTML = d.toString();
+</script>
+  
 </div>
 {% endblock %}
