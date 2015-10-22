@@ -1,7 +1,21 @@
 {% extends "base.html" %}
 {% block content %}
+{% load staticfiles %}
 <div class="jumbotron">
-    <h1>About Miguel Olivares</h1>
-    <p>This is a page about me enjoy.</p>
+      <img class="experience" src={% static "img/extra-activities.png" %} alt="experience" style="width:150px;height:150px;float:right" />
+
+    <h3>Experience</h3>
+    <ul style="font-size:18px">
+      <li>Supervisor in the Tech Center</li>
+      <li>Resident Assistant in Hill/Com</li>
+      <li>Community Operations Intern at Facebook</li>
+    </ul>
+  <img class="experience" src={% static "img/experience.png" %} alt="experience" style="width:150px;height:150px;float:right" />
+  <h3>Extra-Curricular Activities</h3>
+    <ul style="font-size:18px">
+      <li>President CIS Society</li>
+      <li>Vice-President Rotaract Club</li>
+      <li>Nobel Peace Prize Summit participant</li>
+    </ul>
 </div>
 {% endblock %}
