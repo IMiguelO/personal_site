@@ -15,7 +15,7 @@ class Question(models.Model):
   title = models.IntegerField(choices=title_options, default=0)
   name = models.CharField(max_length=300)
   email = models.EmailField(max_length=254, blank=False, null= True, unique= False)
-  message = models.TextField(null=True, blank=True)
+  question = models.TextField(null=True, blank=True)
   created_at = models.DateTimeField(auto_now_add=True)
 
   def __unicode__(self):
